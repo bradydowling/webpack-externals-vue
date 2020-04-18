@@ -8,6 +8,9 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  externals: {
+      vue: 'Vue'
+  },
   plugins: [
     new CleanWebpackPlugin()
   ]
